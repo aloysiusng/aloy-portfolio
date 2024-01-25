@@ -1,7 +1,7 @@
 "use client";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { ChevronLeft, ChevronRight, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
-
+import Navigation from "../components/navigation";
 const socials = [
   {
     icon: <Linkedin size={45} />,
@@ -24,7 +24,8 @@ const socials = [
 ];
 export default function Page() {
   return (
-    <div >
+    <div>
+      <Navigation location="Projects" href="/projects"/>
       <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
         {socials.map((s) => (
           <div key={s.href}>

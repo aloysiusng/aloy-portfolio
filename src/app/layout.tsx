@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
-
         <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-200/20 to-black">{children}</div>
       </body>
     </html>
