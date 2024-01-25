@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col items-center justify-center w-screen h-screen">
       <div className="flex space-x-28">
         <Link href="/projects" className="text-lg text-slate-300 font-semibold">
           Projects
@@ -18,6 +18,6 @@ export default function Home() {
       <div className="my-5">
         <p className="px-5 text-xl text-slate-300 font-serif text-pretty">Hi, I am Aloysius</p>
       </div>
-    </>
+    </div>
   );
 }
