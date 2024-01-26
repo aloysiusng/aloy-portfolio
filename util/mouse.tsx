@@ -1,3 +1,10 @@
+/*
+ * This portion of the code is derived from the chronark.com template by Andreas Thomas.
+ * The original code and license information can be found at https://github.com/chronark/chronark.com.
+ *
+ * Copyright (c) 2023 Andreas Thomas
+ * MIT License: https://opensource.org/licenses/MIT
+ */
 import { useEffect, useState } from "react";
 
 interface MousePosition {

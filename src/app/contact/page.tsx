@@ -1,3 +1,10 @@
+/*
+ * Some portion of the code in this file is derived from the chronark.com template by Andreas Thomas.
+ * The original code and license information can be found at https://github.com/chronark/chronark.com.
+ *
+ * Copyright (c) 2023 Andreas Thomas
+ * MIT License: https://opensource.org/licenses/MIT
+ */
 "use client";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
@@ -24,7 +31,7 @@ const socials = [
 ];
 export default function Page() {
   return (
-    <>
+    <div className="block duration-500 relative transform transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0" }'>
       <Navigation location="Projects" href="/projects" />
       <div className="flex flex-col items-center justify-center w-screen h-screen">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
@@ -42,6 +49,6 @@ export default function Page() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
