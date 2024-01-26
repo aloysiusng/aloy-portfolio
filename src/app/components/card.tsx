@@ -1,7 +1,7 @@
 "use client";
 import { Github } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import ReactMarkdown from "react-markdown";
 
@@ -18,7 +18,25 @@ export default function Card({ header = "", summary = "", content = "", company 
   const [showModal, setShowModal] = useState(false);
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+  const modalRef = useRef<HTMLDivElement>(null);
 
+  // Event handler for closing the modal when pressing the Escape key
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      handleCloseModal();
+    }
+  };
+
+  // Attach the event listeners when the modal is shown
+  useEffect(() => {
+    if (showModal) {
+      document.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showModal]);
   return (
     <>
       <div className="flex flex-col h-48 xl:h-44 bg-zinc-900 border rounded-lg border-zinc-500 text-slate-400 cursor-pointer p-4 col-span-3 sm:col-span-2 md:col-span-1 xl:col-span-1" onClick={handleShowModal}>
@@ -28,7 +46,7 @@ export default function Card({ header = "", summary = "", content = "", company 
       </div>
 
       {showModal && (
-        <div onClick={handleCloseModal} className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center pt-14">
+        <div ref={modalRef} onClick={handleCloseModal} className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center pt-14">
           <div className="bg-zinc-900 border rounded-lg border-zinc-500 text-slate-400 p-4 w-full max-w-xl max-h-[80vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-2xl font-bold font-mono text-slate-200 select-none">{header}</h2>
