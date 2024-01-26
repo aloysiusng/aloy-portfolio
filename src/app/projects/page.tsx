@@ -20,16 +20,3 @@ export default function Page() {
     </div>
   );
 }
-// {/* header */}
-// {/* <div className="flex flex-col items-left ml-12 mt-10 w-screen h-screen">
-//   <h2 className="text-3xl font-bold font-mono text-slate-400">Projects</h2>
-//   <p className="mt-4 mr-12 font-mono text-slate-400 text-pretty">Here are the projects that I have done with my friends, some alone!</p>
-// </div> */}
-// {/* cards */}
-
-// {/* <div className="bg-white cursor-pointer" onClick={handleShowModal}>
-//   sajdiasjdasjdjadsijaisjdiasdjiasjdiadjsijijidjaijdijaidjaids
-// </div>
-// <div className="bg-white cursor-pointer">sajdiasjdasjdjadsijaisjdiasdjiasjdiadjsijijidjaijdijaidjaids</div>
-// <div className="bg-white cursor-pointer">sajdiasjdasjdjadsijaisjdiasdjiasjdiadjsijijidjaijdijaidjaids</div>
-// <div className="bg-white cursor-pointer">sajdiasjdasjdjadsijaisjdiasdjiasjdiadjsijijidjaijdijaidjaids</div> */}
