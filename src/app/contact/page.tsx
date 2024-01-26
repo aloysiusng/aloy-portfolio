@@ -6,6 +6,7 @@
  * MIT License: https://opensource.org/licenses/MIT
  */
 "use client";
+
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import Navigation from "../components/navigation";
@@ -31,7 +32,7 @@ const socials = [
 ];
 export default function Page() {
   return (
-    <div className="block duration-500 relative transform transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0" }'>
+    <div>
       <Navigation location="Projects" href="/projects" />
       <div className="flex flex-col items-center justify-center w-screen h-screen -mt-20">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
