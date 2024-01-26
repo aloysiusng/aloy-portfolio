@@ -20,14 +20,14 @@ export default function Card({ header = "", summary = "", content = "", company 
 
   return (
     <>
-      <div className="flex flex-col h-44 bg-zinc-900 border rounded-lg border-zinc-500 text-slate-400 cursor-pointer p-4 col-span-3 sm:col-span-2 md:col-span-1 xl:col-span-1" onClick={handleShowModal}>
+      <div className="flex flex-col xs:h-48 h-44 bg-zinc-900 border rounded-lg border-zinc-500 text-slate-400 cursor-pointer p-4 col-span-3 sm:col-span-2 md:col-span-1 xl:col-span-1" onClick={handleShowModal}>
         <h2 className="text-2xl font-bold font-mono text-slate-200">{header}</h2>
         <br />
         {summary}
       </div>
 
       {showModal && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center pt-10">
           <div className="bg-zinc-900 border rounded-lg border-zinc-500 text-slate-400 p-4 w-full max-w-xl max-h-[80vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-2xl font-bold font-mono text-slate-200">{header}</h2>
