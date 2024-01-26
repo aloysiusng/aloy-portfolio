@@ -1,14 +1,66 @@
 [
-    { "header": "Client: Osotspa Public Company Limited", "content": "Business improvement through route optimisation and executive dashboards" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" },
-    { "header": "Card 1", "content": "Content for Card 1" }
+  {
+    "header": "Curated Singapore Mall Insights",
+    "summary": "Big data pipeline to provide curated information on Singapore malls",
+    "company": "PropertyGuru Singapore",
+    "githubLink": "https://github.com/aloysiusng/is459-project",
+    "context": "Aspiring entrepreneurs in Singapore struggle to choose the right commercial space due to a lack of curated information on malls and their surroundings. Thus, my friends and I created a big data pipeline with curated information about malls in Singapore that can be integrated into Commercial Guru for users to make data-driven decisions",
+    "content": "__Location-specific Demographic Profiling:__ Combine commercial property data with demographic information Create profiles of the typical customers around each mall\n- __Surrounding Property Analysis:__ Evaluate the types of surrounding properties and their classifications. Understand the level of activity in the vicinity to impact visibility and ccessibility\n- __Retail Mix Analysis:__ Providing insights on malls’ retail mix. Understanding the retail mix enables decision makers to make more data-driven actions"
+  },
+  {
+    "header": "Plantify",
+    "summary": "Simplifying the way we care for plants",
+    "company": "",
+    "githubLink": "https://github.com/aloysiusng/iot-plantify",
+    "context": "Plantify is an innovative Cyber Physical System (CPS) designed to revolutionize the way we care for plants, catering to the needs of busy individuals, particularly those with full-time jobs or busy lifestyles. The system, enable users to effortlessly maintain healthy and thriving indoor and outdoor plants while optimizing resource consumption.",
+    "content": "Scalable design to accomodate more plants if necessary for a single or more users​\n - __Data collection:__ Data collection from sensors to be stored in our database​\n - __Actuation:__ Automated actuation to dispense water into the plant’s soil​\n - __Email notifications:__ Email notifications are sent once the water pump level reaches a certain threshold​\n - __Configurability:__ Users are able to configure settings such as how much water to dispense and treshold​\n - __Dashboard:__ Dashboard for users to gain insights on how is their plant doing. E.g, water consumption"
+  },
+  {
+    "header": "TikTok Hackathon 2023",
+    "summary": "Imagine a platform where E-Commerce meets Social Media and dropshipping made easy (Finalist)",
+    "company": "TikTok",
+    "githubLink": "https://github.com/aloysiusng/ttcommerce",
+    "context": "We imagined a future where E-Commerce meets Social Media, and Tiktok would be the perfect platform by having both TikTok Shop and TikTok Live, a streaming platform that has many Tiktokers streaming content live to millions of people every day and a virtual marketplace all on the same platform. Tiktok Commerce is a web application for both Suppliers and TikTokers to manage their dropshipping platform.",
+    "content": "Our front end was built using Next.js and React, taking full advantage of Vercel's hosting capabilities to ensure a fast and reliable user experience. On the backend, we leveraged the serverless architecture of AWS Lambda functions. AWS offered us a highly scalable and cost-effective solution, ideal for an application that could potentially experience rapid growth.\n- __[https://devpost.com/software/tiktok-commerce](https://devpost.com/software/tiktok-commerce)__"
+  },
+  {
+    "header": "Ninja Van Code Dojo 2023",
+    "summary": "Using computer vision to solve a critical problem faced by Ninja Van's warehouse (Most Feasible Award)",
+    "company": "Ninja Van",
+    "githubLink": "https://github.com/aloysiusng/HSCR",
+    "context": "We seek to solve a critical problem faced by Ninjavan's sorting center. As-Is, the facility might experience delays and potential losses due to clogs caused by high influx of goods, coupled with a disorganised sorting process that makes it difficult to locate items. Our solution involves organising the warehouse to ensure efficient pallet placement, and implementing computer vision with AI to detect vacant spaces. This will provide decision makers with real-time information to facilitate transport of goods to either the sorting hub or backlog facility. By streamlining the sorting process, we can help Ninjavan save time, money, and provide a better experience for their consignees.",
+    "content": "Utilising computer vision to estimate warehouse capacity by to detecting empty boxed out spaces.\n- Warehouse congestion status is displayed on a dashboard for the warehouse manager to monitor.\n- Alerts/updates are also provided to drivers & ops personel in the event of the warehouse reaching capacity"
+  },
+  {
+    "header": "Big Data Exploration",
+    "summary": "Solving business questions with news category data set",
+    "company": "",
+    "githubLink": "https://github.com/aloysiusng/Big-Data-Archiecture-for-News-Dataset",
+    "context": "An introduction for myself to Big Data Architectures on AWS. I used a news category dataset of Huffington Post on Kaggle to solve three business questions. ",
+    "content": "Through the three business questions, I was able to gain insights on the dataset and also learn about the different AWS services such as S3, Athena, Glue, QuickSight and Lambda. I was also tap on my new learnt knowledge on Terraform to automate the creation of the AWS services."
+  },
+  {
+    "header": "A Learning Management System (LMS)",
+    "summary": "Building a production ready LMS for a local music academy",
+    "company": "Learn2PlayMusic Academy",
+    "githubLink": "https://github.com/aloysiusng/learning-2-play-music-lms",
+    "context": "Learn 2 Play Music Academy (L2PMA) is a music academy offering music courses to both young adults and children. As L2PMA expands, it has become apparent that the existing business processes are inefficient. Additionally, they find that  there is a lack of student engagement.",
+    "content": "5 main features of the LMS includes:\n - __Chat:__ A chat feature to allow students to communicate with their teachers\n - __Announcement:__ An announcement feature to allow admins to easily disseminate information\n - __Report:__ A feature to allow teachers and students to track their progress\n - __Homework:__ A feature to allow students to reinforce their learnings at home\n - __Quiz:__ Another feature for students to reinforce their learnings at home The LMS is built with Python, React.js, Node.js. It is also deployed on AWS and Firebase."
+  },
+  {
+    "header": "Authentication & IAM System Implementation",
+    "summary": "Authentication service implementation on AWS",
+    "company": "Ascenda Singapore",
+    "githubLink": "https://github.com/aloysiusng/cs301-itsa",
+    "context": "To implement an authentication service to leverage on managed users’ services.\n System must be highly secure, scalable, highly available, highly interoperable, resilient and have effective disaster recovery.",
+    "content": "Implementing an authorization server with Spring Boot, a simple client application to test the authorization server and also implementing SSO login."
+  },
+  {
+    "header": "Overseas Project Experience (Thailand)",
+    "summary": "Business improvement through machine learning and tailored visualisations",
+    "company": "Osotspa Public Company Limited",
+    "githubLink": "https://github.com/aloysiusng/ope",
+    "context": "Osotspa is a leading consumer products company in Thailand. The company has a strong portfolio of brands in the beverage, food and personal care categories. Osotspa has a strong presence in Thailand and exports to over 30 countries worldwide. The company has a strong distribution network in Thailand and a growing presence in the region. Osotspa has a strong portfolio of brands in the beverage, food and personal care categories. Osotspa has a strong presence in Thailand and exports to over 30 countries worldwide. The company has a strong distribution network in Thailand and a growing presence in the region. The objective is to assist the sales department in identifying the best products to sell to each customer and to optimise the delivery routes for cost reductions.",
+    "content": "To create tailored visualisations for different departments and machine learning models to swiftly gain insights at a glance to assist the implementation of sales strategies.\n\n- Executive dashboards were created for the sales team to enable better data-driven decision making.\n- A recommendation engine was created to assist the sales team in identifying the best products to sell to each customer.\n- Finally, a machine learning model was created to enable route optimization of the delivery for cost reductions."
+  }
 ]
