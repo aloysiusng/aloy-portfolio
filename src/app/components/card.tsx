@@ -35,7 +35,6 @@ export default function Card({ header = "", summary = "", content = "", company 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showModal]);
   return (
     <>
@@ -59,11 +58,11 @@ export default function Card({ header = "", summary = "", content = "", company 
             </div>
             <span className="italic font-light select-none">{summary}</span>
             <br />
-            {company === "" ? (
+            {githubLink && company === "" ? (
               <Link href={githubLink} target="_blank">
                 <Github size={30} className="mt-2 ring ring-white/50 rounded-full" />
               </Link>
-            ) : (
+            ) : githubLink ? (
               <div className="flex justify-between items-center mb-2">
                 <p className="text-slate-300 select-none">
                   <b>Client:</b> &nbsp;
@@ -73,7 +72,7 @@ export default function Card({ header = "", summary = "", content = "", company 
                   <Github size={30} className="mr-1 ring ring-white/50 rounded-full" />
                 </Link>
               </div>
-            )}
+            ) : null}
             <br />
             <p className="text-justify text-pretty select-none">
               <span className="font-bold text-slate-300">Context:</span> <br /> {context}

@@ -1,5 +1,37 @@
 [
   {
+    "header": "AWS Multi-Region Disaster Recovery",
+    "summary": "Led a production warm-standby recovery program for a payments platform",
+    "company": "",
+    "context": "Designed and delivered a production multi-region AWS disaster recovery capability for a payments platform, focused on controlled failover, data consistency, and keeping standby infrastructure lean.",
+    "content": "- Migrated the production database to Aurora PostgreSQL Global Database through a phased, snapshot-backed cutover; added a cross-region write gate to prevent split-brain writes and immutable cross-region backups.\n- Implemented two-way GemFire WAN replication and Route 53 failover routing using an S3 signal, Lambda, CloudWatch, and health checks.\n- Co-built an automated failover and switchover tool, validated successfully in 100% of recorded runs.\n- Achieved 100% transaction retention during load validation, with no lost transactions.\n- Ran chaos and disaster recovery exercises covering availability-zone and regional outages, network blackholes, load-balancer failure, database reboot and restore, and full-disk scenarios.\n- Kept standby costs low by running only the data grid and core services in the secondary region.",
+    "githubLink": ""
+  },
+  {
+    "header": "Production Cost Optimization",
+    "summary": "Re-architected GemFire client topology, halving client sets and reducing configured production EKS nodes by about 69%",
+    "company": "",
+    "context": "Improved the production GemFire client topology across regions while validating transaction performance and resilience.",
+    "content": "- Re-architected the server topology, reducing client sets by 50%.\n- Reduced configured production EKS nodes by about 69%.\n- Validated rollouts with performance and resilience tests covering availability-zone failure, node repaving, and client loss; 100% of transactions completed.",
+    "githubLink": ""
+  },
+  {
+    "header": "Kubernetes Platform Modernization",
+    "summary": "Helped migrate microservices to modular EKS and Istio ahead of NGINX ingress end of support",
+    "company": "",
+    "context": "Helped plan and enable a platform transition from legacy EKS with NGINX ingress to modular EKS clusters using an Istio service mesh.",
+    "content": "- Hardened workloads with non-root containers, seccomp, dropped Linux capabilities, Cilium network policies, cert-manager CSI trust bundles, and least-privilege IAM.\n- Built Spinnaker and Kustomize deployment support for both legacy and modular clusters.\n- Planned the rollout that the team delivered to production.",
+    "githubLink": ""
+  },
+  {
+    "header": "Production Reliability and Technical Leadership",
+    "summary": "Resolved a recurring Kafka decryption issue and helped scale delivery across the infrastructure team",
+    "company": "",
+    "context": "Contributed to production reliability and knowledge sharing across a multi-region infrastructure program.",
+    "content": "- Traced recurring Kafka (MSK) decryption failures to a key-cache expiry race, shipped a fix, and worked with the upstream team on a permanent fix.\n- Contributed about 36% of commits to the multi-region infrastructure repository.\n- Wrote architecture documentation, runbooks, and a knowledge-transfer deck, and broke delivery into work across the engineering team.",
+    "githubLink": ""
+  },
+  {
     "header": "Curated Singapore Mall Insights",
     "summary": "Big data pipeline to provide curated information on Singapore malls",
     "company": "PropertyGuru Singapore",
